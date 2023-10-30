@@ -1,0 +1,160 @@
+.home-container, .about-container, .portfolio-container{
+    animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateX('-10');
+    }
+
+    to{
+        opacity: 1;
+        transform: rotateX('0');
+    }
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;  
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0 ;
+    background-color: #fdcc04;
+    
+}
+
+/* -------NAV------- */
+
+nav{
+    height: 4rem;
+    width: 95vw;
+    background-color: #fdcc04;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    padding: 0 1rem;
+}
+
+nav a:hover{
+    color: white;
+}
+
+.logo img{
+    width: 7.5rem;
+}
+
+/* -------HOME------- */
+
+.home-container{
+    background-image: url("/Web-site/Images/SETGABI.jpg");
+    height: 93vh;
+    background-repeat: no-repeat;
+    background-position-y: -4.5rem;
+}
+
+.home-items{
+    display: grid;
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 93vh;
+    padding: 0 2rem;
+}
+
+.home-items h1{
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+}
+
+.home-items a{
+    padding: 0.7rem 1.5rem;
+    font-size: 1.1rem;
+    border: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.home-items a:hover{
+    color:#fdcc04;
+}
+
+/* -------PORTFOLIO------- */
+
+.portfolio-container{
+    margin: 3rem;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}  
+
+.horizontal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vertical{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.horizontal img{
+    height: 25rem;
+}
+
+.vertical img{
+    height: 35rem;
+}
+
+/* -------ABOUT------- */
+
+.about-container{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+
+.about-title{
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.about-text-1 p{
+    margin-top: 2rem;
+    padding: 0rem 20rem;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+.about-title h2{
+    margin-top: 1rem;
+}
+
+
+
+
